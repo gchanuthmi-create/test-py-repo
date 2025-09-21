@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // nav toggle
+ 
   const navToggle = document.getElementById("navToggle");
   const mainNav = document.getElementById("mainNav");
   if (navToggle && mainNav) {
     navToggle.addEventListener("click", () => mainNav.classList.toggle("active"));
   }
 
-  // feedback form
+  
   const form = document.getElementById("feedbackForm");
   const formMessage = document.getElementById("formMessage");
   if (form) {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // FAQ accordion
+ 
   document.querySelectorAll(".faq-question").forEach(btn => {
     btn.addEventListener("click", () => {
       const answer = btn.nextElementSibling;
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Newsletter
+ 
   const newsletterForm = document.getElementById("newsletter-form");
   if (newsletterForm) {
     newsletterForm.addEventListener("submit", e => {
