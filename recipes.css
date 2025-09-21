@@ -1,0 +1,251 @@
+:root {
+  --green:#2d6a4f;
+  --accent:#b8e6b5;
+  --muted:#666;
+  --shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #daedd9;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 23px;
+}
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+/* Header + Footer (same as index) */
+.site-header, .site-footer {
+  background: var(--green);
+  color: white;
+}
+.header-inner {
+  position: relative;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+
+.logo { display:flex; align-items:center; gap:8px; }
+.logo img { width:40px; height:40px; border-radius:8px; background:#fff; }
+.main-nav ul {
+  display:flex; gap:16px; list-style:none; margin:0; padding:0;
+}
+.main-nav a {
+  color:white; text-decoration:none; font-weight:500;
+}
+.main-nav a.active { text-decoration:underline; }
+.footer-inner { padding:16px; }
+
+/* Search filter */
+.search-filter {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:30px;
+}
+.search-filter input, .search-filter select {
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+/* Recipes Grid */
+.recipes-grid {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:20px;
+}
+@media (max-width:1000px){
+  .recipes-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:600px){
+  .recipes-grid { grid-template-columns:1fr; }
+}
+
+/* Recipe card */
+.recipe-card {
+  background: #e8f5e9;
+  border-radius:12px;
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  cursor:pointer;
+  transition: transform 0.2s;
+}
+.recipe-card:hover { transform: scale(1.03); }
+.recipe-card img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+.recipe-card h3 {
+  margin:10px;
+  font-family:'Playfair Display', serif;
+  color: var(--green);
+}
+.recipe-card p { margin:10px; color: #444; }
+
+/* Modal */
+.modal {
+  display:none;
+  position:fixed;
+  z-index:100;
+  left:0; top:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.6);
+  justify-content:center;
+  align-items:center;
+}
+.modal-content {
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  max-width:700px;
+  width:90%;
+  overflow-y:auto;
+  max-height:90vh;
+}
+.modal img { width:100%; border-radius:10px; }
+.close {
+  float:right;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* ==== HEADER & FOOTER (copied from index.css) ==== */
+:root{
+  --pink:#daedd9;
+  --accent:#b8e6b5;
+  --green:#2d6a4f;
+  --muted:#666;
+  --shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.site-header, .site-footer{
+  background: var(--green);
+  color: #fff;
+}
+.site-header .brand, 
+.site-header a,
+.site-footer a{ color:#fff; }
+.site-header{ 
+    border-bottom:4px solid var(--accent); 
+}
+.site-footer{ border-top:30px solid var(--accent); padding:16px 0; }
+
+.header-inner{display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:center;gap:8px}
+.logo img{width:40px;height:40px;object-fit:cover;border-radius:8px;background:#fff}
+.main-nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0}
+.main-nav a{text-decoration:none;font-weight:500;}
+.main-nav a.active{text-decoration:underline;}
+.nav-box { margin-left:auto; }
+
+/* Mobile nav */
+.nav-toggle {
+  display:none;
+  background:none;
+  border:none;
+  font-size:26px;
+  color:#fff;
+  cursor:pointer;
+}
+@media(max-width:768px){
+  .main-nav{ 
+    display:none; 
+    position:absolute; 
+    top:100%; 
+    right:16px; 
+    background: var(--green);
+    padding:12px; 
+    border-radius:8px; 
+    z-index:999;
+  }
+  .main-nav.active{ display:block; }
+  .main-nav ul{ flex-direction:column; gap:10px; }
+  .nav-toggle{ display:block; }
+  .header-inner{ position:relative; }
+}
+
+/* Footer layout */
+footer {
+  background: #2d6a4f;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.footer-name {
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.socials li {
+  margin: 6px 0;
+  display: flex;           /* put icon + text on one line */
+  align-items: center;     /* vertically center them */
+  gap: 8px;                /* space between icon and text */
+  white-space: nowrap;   /* keeps the number on one line */
+}
+
+.socials i {
+  min-width: 20px;         /* keeps icons same width so text aligns neatly */
+  text-align: center;
+}
+
+
+#newsletter-form {
+  display: flex;
+  flex-direction: column;  /* stack label, input, button */
+  align-items: center;     /* center the stack */
+  gap: 8px;                /* spacing between input + button */
+  max-width: 280px;
+  margin: auto;            /* keeps it centered */
+}
+#newsletter-form input {
+  width: 100%;
+  text-align: center;
+}
+
+/* ==== Your Recipes CSS continues below ==== */
+
+/* Make logo + brand text bigger and bold */
+.logo .brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Make nav menu links larger */
+.main-nav a {
+  font-size: 18px;
+  font-weight: 500;
+}

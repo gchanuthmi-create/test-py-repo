@@ -1,0 +1,122 @@
+:root{
+  --pink:#daedd9;
+  --accent:#b8e6b5;
+  --green:#2d6a4f;
+  --muted:#666;
+  --shadow:0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* Base */
+*{box-sizing:border-box}
+body{ margin:0; font-family:'Playfair Display', serif; background:var(--pink); color:#222; line-height:1.5; }
+.container{ max-width:1200px; margin:0 auto; padding:20px; }
+
+/* ==== HEADER (copied from calculator) ==== */
+.site-header{ background:var(--green); color:#fff; border-bottom:4px solid var(--accent); }
+.header-inner{ display:flex; align-items:center; justify-content:space-between; position:relative; }
+.logo{ display:flex; align-items:center; gap:8px; }
+.logo img{ width:40px; height:40px; object-fit:cover; border-radius:8px; background:#fff; }
+.logo .brand{ font-size:28px; font-weight:700; color:#fff; }
+
+/* Menu */
+.main-nav ul{ display:flex; gap:16px; list-style:none; margin:0; padding:0; }
+.main-nav a{ text-decoration:none; font-size:18px; font-weight:500; color:#fff; }
+.main-nav a.active{ text-decoration:underline; }
+.nav-box { margin-left:auto; }
+
+/* Hamburger */
+.nav-toggle{ display:none; background:none; border:none; font-size:26px; color:#fff; cursor:pointer; position:absolute; top:50%; right:16px; transform:translateY(-50%); }
+@media(max-width:768px){
+  .main-nav{ display:none; position:absolute; top:100%; right:16px; background:var(--green); padding:12px; border-radius:8px; z-index:999; }
+  .main-nav.active{ display:block; }
+  .main-nav ul{ flex-direction:column; gap:10px; }
+  .nav-toggle{ display:block; }
+  .header-inner{ position:relative; }
+}
+
+/* ==== PAGE CONTENT (unchanged) ==== */
+.page-title{ text-align:center; font-family:'Playfair Display', serif; color:var(--green); font-size:36px; margin:28px 0 6px; }
+.intro{ text-align:center; max-width:780px; margin:0 auto 30px; color:#444; font-size:18px; }
+
+/* Section titles */
+.section-title{ text-align:center; color:var(--green); margin:18px 0; }
+
+/* Divider line */
+.section-divider { width:100%; height:2px; background:#ccc; margin:30px auto; max-width:800px; }
+
+/* Breathing box */
+.breathing-box{ display:flex; flex-direction:column; align-items:center; justify-content:center; padding:18px 20px; min-height:240px; width:100%; }
+#breathingCircle{ width:120px; height:120px; margin:8px 0; border-radius:50%; background:var(--accent); transition:transform 3.5s ease-in-out; transform-origin:center center; box-shadow:var(--shadow); }
+#breathingText{ font-size:18px; font-weight:600; margin:12px 0; color:#1d3b2a; }
+.btn{ background:var(--green); color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer; }
+.btn:hover{ background:#24543f; }
+
+/* Timer */
+.timer-section{ text-align:center; margin:30px 0; }
+.timer-box{ display:inline-block; background:#fff; padding:16px 18px; border-radius:12px; box-shadow:var(--shadow); }
+#timerSelect{ padding:8px; border-radius:8px; border:1px solid #ccc; margin-right:8px; }
+.timer-display{ font-size:26px; font-weight:700; color:var(--green); margin:10px 0; }
+.session-count{ margin-top:8px; font-weight:600; color:#444; }
+
+/* Sounds */
+.sounds-section{ text-align:center; margin:20px 0 60px; }
+.sound-buttons{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:8px; }
+.sound-btn{ background:var(--green); color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
+.sound-btn[aria-pressed="true"]{ background:#183b2f; }
+.sound-note{ color:#666; font-size:13px; margin-top:6px; }
+
+/* Footer */
+footer {
+  background: #2d6a4f;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.footer-name {
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.socials li {
+  margin: 6px 0;
+  display: flex;           /* put icon + text on one line */
+  align-items: center;     /* vertically center them */
+  gap: 8px;                /* space between icon and text */
+  white-space: nowrap;   /* keeps the number on one line */
+}
+
+.socials i {
+  min-width: 20px;         /* keeps icons same width so text aligns neatly */
+  text-align: center;
+}
+
+
+#newsletter-form {
+  display: flex;
+  flex-direction: column;  /* stack label, input, button */
+  align-items: center;     /* center the stack */
+  gap: 8px;                /* spacing between input + button */
+  max-width: 280px;
+  margin: auto;            /* keeps it centered */
+}
+#newsletter-form input {
+  width: 100%;
+  text-align: center;
+}
+
+/* Accessibility helpers */
+.visually-hidden{ position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); border:0; }

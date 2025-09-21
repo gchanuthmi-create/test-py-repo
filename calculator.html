@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-page="calculator">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenbite — Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body data-page="calculator">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="images/depositphotos_316975810-stock-illustration-aloe-vera-plant-logo-icon.webp" alt="Greenbyte logo">
+        <span class="brand">Greenbite</span>
+      </div>
+
+      <!-- mobile hamburger -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+
+      <div class="nav-box">
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="calculator.html" class="active">Calculator</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li><a href="mindfulness.html">Mindfulness</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main" class="container">
+    <section class="calc-intro">
+      <h1>Calorie & Nutrition Calculator</h1>
+      <p>Enter your details to estimate daily calorie needs and macronutrient targets.</p>
+      <p class="muted">Tip: Results are estimates — use them as a guide.</p>
+    </section>
+
+    <section class="calculator-wrapper">
+      <form id="calc-form" class="calc-form" aria-label="Calorie and nutrition calculator">
+        <div class="form-row">
+          <label for="age">Age</label>
+          <input id="age" type="number" min="10" max="120" required>
+        </div>
+        <div class="form-row">
+          <label for="gender">Gender</label>
+          <select id="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="height">Height (cm)</label>
+          <input id="height" type="number" min="50" max="250" required>
+        </div>
+        <div class="form-row">
+          <label for="weight">Weight (kg)</label>
+          <input id="weight" type="number" min="20" max="300" required>
+        </div>
+        <div class="form-row">
+          <label for="activity">Activity level</label>
+          <select id="activity" required>
+            <option value="">Select</option>
+            <option value="1.2">Sedentary (little/no exercise)</option>
+            <option value="1.375">Lightly active (1–3 days/wk)</option>
+            <option value="1.55">Moderately active (3–5 days/wk)</option>
+            <option value="1.725">Very active (6–7 days/wk)</option>
+            <option value="1.9">Extra active (very hard exercise)</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="submit" id="calc-submit">Calculate</button>
+        </div>
+        <p id="calc-error" class="error" aria-live="polite"></p>
+      </form>
+
+      <div id="calc-results" class="calc-results" aria-live="polite" hidden>
+        <h2>Results</h2>
+        <p><strong>BMR:</strong> <span id="res-bmr">0</span> kcal/day</p>
+        <p><strong>TDEE:</strong> <span id="res-tdee">0</span> kcal/day</p>
+        <div class="macros">
+          <div class="macro">
+            <h4>Carbs</h4>
+            <div class="counter"><span id="res-carbs">0</span> g</div>
+            <progress id="prog-carbs" value="0" max="100"></progress>
+          </div>
+          <div class="macro">
+            <h4>Protein</h4>
+            <div class="counter"><span id="res-protein">0</span> g</div>
+            <progress id="prog-protein" value="0" max="100"></progress>
+          </div>
+          <div class="macro">
+            <h4>Fat</h4>
+            <div class="counter"><span id="res-fat">0</span> g</div>
+            <progress id="prog-fat" value="0" max="100"></progress>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <img src="images/depositphotos_316975810-stock-illustration-aloe-vera-plant-logo-icon.webp" alt="GreenBite Logo" class="footer-logo">
+      <p class="footer-name">GreenBite</p>
+    </div>
+
+    <div class="footer-center">
+      <ul class="socials">
+        <li><i class="fab fa-whatsapp"></i> +94 77 895 4532</li>
+        <li><i class="fab fa-instagram"></i> @green_B</li>
+        <li><i class="fab fa-facebook"></i> GreenBite.LK</li>
+        <li><i class="fab fa-twitter"></i> @greenbite_tw</li>
+      </ul>
+    </div>
+
+    <div class="footer-right">
+      <form id="newsletter-form">
+        <label for="newsletter-email">Join our newsletter:</label>
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="calculator.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "r1",
+    "title": "Quinoa Salad",
+    "description": "A refreshing quinoa salad packed with vegetables.",
+    "image": "images/229156-Zesty-Quinoa-Salad-ddmps-4x3-104421-df647e343ce543769a038cccf4c6419c.jpg",
+    "category": "Lunch",
+    "ingredients": ["1 cup quinoa", "1 cucumber", "1 tomato", "Olive oil", "Lemon juice"],
+    "steps": [
+      "Cook quinoa according to package instructions.",
+      "Chop cucumber and tomato.",
+      "Mix everything with olive oil and lemon juice.",
+      "Serve chilled."
+    ],
+    "nutrition": {"calories": "250", "protein": "8g", "carbs": "45g", "fat": "6g"}
+  },
+  {
+    "id": "r2",
+    "title": "Grilled Salmon",
+    "description": "Simple grilled salmon with lemon butter.",
+    "image": "images/how-to-grill-salmon-recipe1-1655870645.avif",
+    "category": "Dinner",
+    "ingredients": ["Salmon fillet", "Butter", "Garlic", "Lemon juice", "Salt", "Pepper"],
+    "steps": [
+      "Season salmon with salt and pepper.",
+      "Grill salmon skin side down for 5–6 mins.",
+      "Melt butter with garlic and lemon juice.",
+      "Drizzle sauce over salmon and serve."
+    ],
+    "nutrition": {"calories": "320", "protein": "34g", "carbs": "2g", "fat": "18g"}
+  },
+  {
+    "id": "r3",
+    "title": "Veggie Stir Fry",
+    "description": "Colorful stir fry with seasonal vegetables.",
+    "image": "images/Thai-Vegetable-Stir-Fry-with-Lime-and-Ginger_done.png",
+    "category": "Dinner",
+    "ingredients": ["Broccoli", "Carrots", "Bell peppers", "Soy sauce", "Sesame oil"],
+    "steps": [
+      "Heat sesame oil in a wok.",
+      "Add chopped vegetables.",
+      "Stir fry for 5–7 mins.",
+      "Add soy sauce and serve hot."
+    ],
+    "nutrition": {"calories": "200", "protein": "7g", "carbs": "28g", "fat": "7g"}
+  },
+  {
+    "id": "r4",
+    "title": "Berry Yogurt Parfait",
+    "description": "Layered parfait with Greek yogurt and fresh berries.",
+    "image": "images/EFB77287-4B99-40D3-AB71-4BD8FE7DFD78_1_201_a-scaled.jpg",
+    "category": "Breakfast",
+    "ingredients": ["1 cup Greek yogurt", "1/2 cup strawberries", "1/2 cup blueberries", "Granola", "Honey"],
+    "steps": [
+      "Layer Greek yogurt in a glass.",
+      "Add strawberries and blueberries.",
+      "Top with granola and a drizzle of honey."
+    ],
+    "nutrition": {"calories": "220", "protein": "10g", "carbs": "30g", "fat": "6g"}
+  },
+  {
+    "id": "r5",
+    "title": "Lentil Soup",
+    "description": "Comforting soup made with lentils and spices.",
+    "image": "images/lentil-soup_thecozyapron_5.jpg",
+    "category": "Lunch",
+    "ingredients": ["1 cup lentils", "1 onion", "2 carrots", "Vegetable broth", "Spices"],
+    "steps": [
+      "Rinse and cook lentils in broth.",
+      "Add chopped onion and carrots.",
+      "Season with spices and simmer for 20 minutes."
+    ],
+    "nutrition": {"calories": "280", "protein": "14g", "carbs": "45g", "fat": "4g"}
+  },
+  {
+    "id": "r6",
+    "title": "Chicken Wrap",
+    "description": "Whole wheat wrap filled with grilled chicken and veggies.",
+    "image": "images/BBQ_Chicken_Wraps_1-1024x684.jpg.webp",
+    "category": "Snack",
+    "ingredients": ["Tortilla wrap", "Grilled chicken", "Lettuce", "Tomato", "Yogurt sauce"],
+    "steps": [
+      "Grill chicken until golden.",
+      "Place chicken and veggies on wrap.",
+      "Add yogurt sauce.",
+      "Roll tightly and serve."
+    ],
+    "nutrition": {"calories": "310", "protein": "25g", "carbs": "28g", "fat": "10g"}
+  },
+  {
+    "id": "r7",
+    "title": "Chia Pudding",
+    "description": "Creamy chia seed pudding with almond milk.",
+    "image": "images/Pineapple-Mango-Chia-Pudding-7.webp",
+    "category": "Breakfast",
+    "ingredients": ["3 tbsp chia seeds", "1 cup almond milk", "Honey", "Banana slices"],
+    "steps": [
+      "Mix chia seeds with almond milk.",
+      "Refrigerate overnight.",
+      "Top with banana slices and honey before serving."
+    ],
+    "nutrition": {"calories": "190", "protein": "6g", "carbs": "25g", "fat": "8g"}
+  },
+  {
+    "id": "r8",
+    "title": "Stuffed Bell Peppers",
+    "description": "Bell peppers stuffed with rice and beans.",
+    "image": "images/AR-236359-beef-and-rice-stuffed-bell-peppers-DDMFS-4x3-beauty-dd9458de98884d4eb362354ee626d70e.jpg",
+    "category": "Dinner",
+    "ingredients": ["4 bell peppers", "1 cup rice", "1 cup beans", "Tomato sauce", "Cheese"],
+    "steps": [
+      "Cook rice and beans together.",
+      "Cut tops off bell peppers and remove seeds.",
+      "Stuff peppers with rice mixture.",
+      "Top with cheese and bake for 20 minutes."
+    ],
+    "nutrition": {"calories": "330", "protein": "12g", "carbs": "55g", "fat": "9g"}
+  }
+]

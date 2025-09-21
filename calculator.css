@@ -1,0 +1,176 @@
+:root {
+  --green:#2d6a4f;
+  --accent:#b8e6b5;
+  --shadow:0 6px 16px rgba(0,0,0,0.1);
+}
+
+body {
+  margin:0;
+  font-family: 'Playfair Display', serif;
+  background:#daedd9;
+  color:#2d6a4f;
+}
+
+.container { max-width:1200px; margin:auto; padding:23px; }
+
+/* HEADER */
+.site-header, .site-footer {
+  background: var(--green);
+  color: #fff;
+}
+.site-header .brand, 
+.site-header a,
+.site-footer a {
+   color:#fff; 
+  }
+.site-header { 
+  border-bottom:4px solid var(--accent); 
+}
+.site-footer {
+   border-top:30px solid var(--accent); padding:16px 0; 
+  }
+
+.header-inner {
+   display:flex; align-items:center; justify-content:space-between; 
+  }
+.logo {
+   display:flex; align-items:center; gap:8px; 
+  }
+.logo img {
+   width:40px; height:40px; object-fit:cover; border-radius:8px; background:#fff; 
+  }
+.logo .brand {
+   font-size:28px; font-weight:700; 
+  }
+
+.main-nav ul {
+   display:flex; gap:16px; list-style:none; margin:0; padding:0; 
+  }
+.main-nav a {
+   text-decoration:none; font-size:18px; font-weight:500; 
+  } /* lighter than before */
+.main-nav a.active { text-decoration:underline; }
+.nav-box { margin-left:auto; }
+
+/* Mobile nav */
+.nav-toggle {
+  display:none;
+  background:none;
+  border:none;
+  font-size:26px;
+  color:#fff;
+  cursor:pointer;
+  position:absolute;
+  top:50%;
+  right:16px;
+  transform:translateY(-50%);
+}
+@media(max-width:768px) {
+  .main-nav { 
+    display:none; 
+    position:absolute; 
+    top:100%; 
+    right:16px; 
+    background: var(--green);
+    padding:12px; 
+    border-radius:8px; 
+    z-index:999;
+  }
+  .main-nav.active { display:block; }
+  .main-nav ul { flex-direction:column; gap:10px; }
+  .nav-toggle { display:block; }
+  .header-inner { position:relative; }
+}
+
+/* Footer */
+footer {
+  background: #2d6a4f;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.footer-name {
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.socials li {
+  margin: 6px 0;
+  display: flex;           /* put icon + text on one line */
+  align-items: center;     /* vertically center them */
+  gap: 8px;                /* space between icon and text */
+  white-space: nowrap;   /* keeps the number on one line */
+}
+
+.socials i {
+  min-width: 20px;         /* keeps icons same width so text aligns neatly */
+  text-align: center;
+}
+
+
+#newsletter-form {
+  display: flex;
+  flex-direction: column;  /* stack label, input, button */
+  align-items: center;     /* center the stack */
+  gap: 8px;                /* spacing between input + button */
+  max-width: 280px;
+  margin: auto;            /* keeps it centered */
+}
+#newsletter-form input {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Calculator */
+.calc-intro { text-align:center; margin-bottom:30px; }
+.calc-intro h1 { font-size:37px; font-weight:700; color:var(--green); margin-bottom:12px; }
+.calc-intro p { font-size:18px; font-family:'Playfair Display', serif; line-height:1.6; color:#333; }
+
+.calculator-wrapper { display:flex; flex-direction:column; align-items:center; }
+.calc-form {
+  background:#e2e2bf;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  width:100%;
+  max-width:420px;
+}
+.form-row { display:flex; flex-direction:column; margin-bottom:12px; }
+.form-row label { margin-bottom:6px; font-weight:600; }
+.form-row input, .form-row select { padding:10px; border-radius:8px; border:1px solid #ccc; }
+.form-actions { text-align:right; }
+button { background:var(--green); color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer; }
+button:hover { background:#24543f; }
+.error { color:red; }
+
+.calc-results {
+  margin-top:20px;
+  background:#e2e2bf;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  max-width:600px;
+}
+.macros { display:flex; flex-wrap:wrap; gap:12px; }
+.macro { flex:1; min-width:150px; background:#f9fff9; padding:10px; border-radius:8px; text-align:center; }
+.counter { font-size:20px; font-weight:600; }
+
+@media(max-width:600px) {
+  .calc-form, .calc-results { width:100%; }
+  .macros { flex-direction:column; }
+}
