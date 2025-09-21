@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // NAV TOGGLE
+  
   const navToggle = document.getElementById("navToggle");
   const mainNav = document.getElementById("mainNav");
   if (navToggle && mainNav) {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* BREATHING */
+ 
   const circle = document.getElementById("breathingCircle");
   const breathingText = document.getElementById("breathingText");
   const startBreathingBtn = document.getElementById("startBreathing");
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* TIMER */
+  
   const timerSelect = document.getElementById("timerSelect");
   const startTimerBtn = document.getElementById("startTimer");
   const timerDisplay = document.getElementById("timerDisplay");
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* SOUNDS */
+  
   const soundUrls = {
     rain: "sounds/calming-rain-257596 (1).mp3",
     ocean: "sounds/ocean-waves-266187.mp3",
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* NEWSLETTER */
+ 
   const newsletterForm = document.getElementById("newsletter-form");
   if (newsletterForm) {
     newsletterForm.addEventListener("submit", e => {
