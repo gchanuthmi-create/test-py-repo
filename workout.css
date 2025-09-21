@@ -1,6 +1,6 @@
 @import url("mindfulness.css");
 
-/* Intro font */
+
 .intro {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
@@ -8,7 +8,7 @@
   margin-bottom: 30px;
 }
 
-/* Menu font */
+
 .main-nav a {
   font-family: 'Playfair Display', serif;
   font-size: 17px;
@@ -73,7 +73,7 @@
   margin:40px 0;
 }
 .tip-box {
-  background:#b8e6b5; /* darker green than background */
+  background:#b8e6b5; 
   padding:14px;
   border-radius:10px;
   box-shadow:var(--shadow);
