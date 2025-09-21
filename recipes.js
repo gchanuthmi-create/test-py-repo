@@ -1,4 +1,4 @@
-// Load recipes
+
 async function loadRecipes() {
   try {
     const response = await fetch("recipes.json");
@@ -10,7 +10,7 @@ async function loadRecipes() {
   }
 }
 
-// Display recipes
+
 function displayRecipes(recipes) {
   const container = document.getElementById("recipesContainer");
   container.innerHTML = "";
@@ -28,7 +28,7 @@ function displayRecipes(recipes) {
   });
 }
 
-// Open modal
+
 function openModal(recipe) {
   document.getElementById("recipeModal").style.display = "flex";
   document.getElementById("modalTitle").textContent = recipe.title;
@@ -50,7 +50,7 @@ function openModal(recipe) {
   `;
 }
 
-// Close modal
+
 document.querySelector(".close").addEventListener("click", () => {
   document.getElementById("recipeModal").style.display = "none";
 });
@@ -60,7 +60,7 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// Search + Filter
+
 function setupFilters(recipes) {
   const searchBar = document.getElementById("searchBar");
   const filterCategory = document.getElementById("filterCategory");
