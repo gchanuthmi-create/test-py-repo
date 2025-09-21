@@ -5,7 +5,6 @@
   --shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* General */
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
@@ -24,7 +23,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Header + Footer (same as index) */
+
 .site-header, .site-footer {
   background: var(--green);
   color: white;
@@ -41,18 +40,36 @@ h1 {
 }
 
 
-.logo { display:flex; align-items:center; gap:8px; }
-.logo img { width:40px; height:40px; border-radius:8px; background:#fff; }
+.logo { 
+  display:flex;
+  align-items:center;
+  gap:8px; 
+}
+.logo img {
+  width:40px;
+  height:40px; 
+  border-radius:8px;
+  background:#fff;
+}
 .main-nav ul {
-  display:flex; gap:16px; list-style:none; margin:0; padding:0;
+  display:flex;
+  gap:16px; 
+  list-style:none;
+  margin:0;
+  padding:0;
 }
 .main-nav a {
-  color:white; text-decoration:none; font-weight:500;
+  color:white;
+  text-decoration:none;
+  font-weight:500;
 }
-.main-nav a.active { text-decoration:underline; }
-.footer-inner { padding:16px; }
+.main-nav a.active {
+  text-decoration:underline;
+}
+.footer-inner {
+  padding:16px; 
+}
 
-/* Search filter */
 .search-filter {
   display:flex;
   justify-content:center;
@@ -66,7 +83,6 @@ h1 {
   font-size:16px;
 }
 
-/* Recipes Grid */
 .recipes-grid {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -79,7 +95,7 @@ h1 {
   .recipes-grid { grid-template-columns:1fr; }
 }
 
-/* Recipe card */
+
 .recipe-card {
   background: #e8f5e9;
   border-radius:12px;
@@ -88,7 +104,9 @@ h1 {
   cursor:pointer;
   transition: transform 0.2s;
 }
-.recipe-card:hover { transform: scale(1.03); }
+.recipe-card:hover {
+  transform: scale(1.03);
+}
 .recipe-card img {
   width:100%;
   height:180px;
@@ -99,9 +117,12 @@ h1 {
   font-family:'Playfair Display', serif;
   color: var(--green);
 }
-.recipe-card p { margin:10px; color: #444; }
+.recipe-card p {
+  margin:10px;
+  color: #444;
+}
 
-/* Modal */
+
 .modal {
   display:none;
   position:fixed;
@@ -128,7 +149,6 @@ h1 {
   cursor:pointer;
 }
 
-/* ==== HEADER & FOOTER (copied from index.css) ==== */
 :root{
   --pink:#daedd9;
   --accent:#b8e6b5;
@@ -147,17 +167,47 @@ h1 {
 .site-header{ 
     border-bottom:4px solid var(--accent); 
 }
-.site-footer{ border-top:30px solid var(--accent); padding:16px 0; }
+.site-footer{
+  border-top:30px solid var(--accent); 
+  padding:16px 0;
+}
 
-.header-inner{display:flex;align-items:center;justify-content:space-between;}
-.logo{display:flex;align-items:center;gap:8px}
-.logo img{width:40px;height:40px;object-fit:cover;border-radius:8px;background:#fff}
-.main-nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0}
-.main-nav a{text-decoration:none;font-weight:500;}
-.main-nav a.active{text-decoration:underline;}
-.nav-box { margin-left:auto; }
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px
+}
+.logo img{
+  width:40px;
+  height:40px;
+  object-fit:cover;
+  border-radius:8px;
+  background:#fff
+}
+.main-nav ul{
+  display:flex;
+  gap:16px;
+  list-style:none;
+  margin:0;
+  padding:0
+}
+.main-nav a{
+  text-decoration:none;
+  font-weight:500;
+}
+.main-nav a.active{
+  text-decoration:underline;
+}
+.nav-box {
+  margin-left:auto;
+}
 
-/* Mobile nav */
+
 .nav-toggle {
   display:none;
   background:none;
@@ -177,13 +227,22 @@ h1 {
     border-radius:8px; 
     z-index:999;
   }
-  .main-nav.active{ display:block; }
-  .main-nav ul{ flex-direction:column; gap:10px; }
-  .nav-toggle{ display:block; }
-  .header-inner{ position:relative; }
+  .main-nav.active{
+    display:block;
+  }
+  .main-nav ul{ 
+    flex-direction:column;
+    gap:10px; 
+  }
+  .nav-toggle{ 
+    display:block;
+  }
+  .header-inner{ 
+    position:relative;
+  }
 }
 
-/* Footer layout */
+
 footer {
   background: #2d6a4f;
   color: rgb(255, 255, 255);
@@ -211,40 +270,38 @@ footer {
 
 .socials li {
   margin: 6px 0;
-  display: flex;           /* put icon + text on one line */
-  align-items: center;     /* vertically center them */
-  gap: 8px;                /* space between icon and text */
-  white-space: nowrap;   /* keeps the number on one line */
+  display: flex;           
+  align-items: center;     
+  gap: 8px;                
+  white-space: nowrap;   
 }
 
 .socials i {
-  min-width: 20px;         /* keeps icons same width so text aligns neatly */
+  min-width: 20px;        
   text-align: center;
 }
 
 
 #newsletter-form {
   display: flex;
-  flex-direction: column;  /* stack label, input, button */
-  align-items: center;     /* center the stack */
-  gap: 8px;                /* spacing between input + button */
+  flex-direction: column; 
+  align-items: center;     
+  gap: 8px;                
   max-width: 280px;
-  margin: auto;            /* keeps it centered */
+  margin: auto;           
 }
 #newsletter-form input {
   width: 100%;
   text-align: center;
 }
 
-/* ==== Your Recipes CSS continues below ==== */
 
-/* Make logo + brand text bigger and bold */
 .logo .brand {
   font-size: 28px;
   font-weight: 700;
 }
 
-/* Make nav menu links larger */
+
 .main-nav a {
   font-size: 18px;
   font-weight: 500;
