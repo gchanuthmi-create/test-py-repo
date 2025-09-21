@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', ()=> {
   const page = document.body.dataset.page || 'home';
 
-  // mobile nav toggle
+ 
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
   if(navToggle && mainNav){
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
   if(page === 'home') initHome();
 });
 
-/* -------------------- HOME -------------------- */
+
 function initHome(){
   // rotating slogans
   const slogans = [
@@ -29,7 +29,7 @@ function initHome(){
     }, 3500);
   }
 
-  // slideshow
+ 
   const slides = document.querySelectorAll('.slideshow .slide');
   if(slides.length){
     let sIndex = 0;
@@ -39,7 +39,7 @@ function initHome(){
     },4000);
   }
 
-  // newsletter
+ 
   const form = document.getElementById('newsletter-form');
   if(form){
     const input = document.getElementById('email');
