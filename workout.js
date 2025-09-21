@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   });
 
-  // Daily tips
+ 
   const tips = [
     "Stay hydrated during workouts.",
     "Always warm up before exercise.",
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tipBox = document.getElementById("dailyTip");
   tipBox.textContent = tips[Math.floor(Math.random() * tips.length)];
 
-  // Newsletter form
+ 
   const newsletterForm = document.getElementById("newsletter-form");
   if (newsletterForm) {
     newsletterForm.addEventListener("submit", e => {
