@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // mobile nav toggle
+ 
   const navToggle = document.getElementById("navToggle");
   const mainNav = document.getElementById("mainNav");
   if (navToggle && mainNav) {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // newsletter form
+ 
   const newsletterForm = document.getElementById("newsletter-form");
   if (newsletterForm) {
     newsletterForm.addEventListener("submit", e => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // calculator logic
+ 
   const form = document.getElementById("calc-form");
   const errorEl = document.getElementById("calc-error");
   const results = document.getElementById("calc-results");
